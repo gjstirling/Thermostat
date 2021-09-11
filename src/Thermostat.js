@@ -1,6 +1,8 @@
+const defaultTemp = 20;
+
 class Thermostat {
   constructor() {
-    this.temperature = 20;
+    this.temperature = defaultTemp;
     this.powerSavingMode = true;
     this.maxTemp = 25;
     this.usage = "medium-usage";
@@ -30,8 +32,6 @@ class Thermostat {
     this.powerSavingMode = true;
     this.maxTemp = 25;
   }
-
-
 
   resetTemperature() {
     this.temperature = 20;

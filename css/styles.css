@@ -1,11 +1,16 @@
+body {
+  padding: 24px;
+  
+}
+
 .low-usage {
-  color: green;
+  background-color: green;
 }
 
 .medium-usage {
-  color: black;
+  background-color: yellow;
 }
 
 .high-usage {
-  color: red;
+  background-color: red;
 }
