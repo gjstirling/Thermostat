@@ -10,27 +10,34 @@ class Thermostat {
   increaseTemp() {
     if (this.temperature < this.maxTemp) {
       this.temperature++;
-      this.setUsage();
+      this.energyUsage();
     }
   }
 
   decreaseTemp() {
     if (this.temperature > 10) {
       this.temperature--;
-      this.setUsage();
+      this.energyUsage();
     }
   }
 
-  switchOff() {
+  powerSavingModeOff() {
     this.powerSavingMode = false;
     this.maxTemp = 32;
   }
 
-  reset() {
+  powerSavingModeOn() {
+    this.powerSavingMode = true;
+    this.maxTemp = 25;
+  }
+
+
+
+  resetTemperature() {
     this.temperature = 20;
   }
 
-  setUsage() {
+  energyUsage() {
     if (this.temperature < 18){
       this.usage = "low-usage";
     }

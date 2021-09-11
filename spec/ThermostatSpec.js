@@ -69,7 +69,7 @@ describe ("Thermostat", function() {
       for( let i = 0; i < 11; i++) { 
         thermostat.decreaseTemp();
       }
-      thermostat.reset();
+      thermostat.resetTemperature();
       expect(thermostat.temperature).toEqual(20);
     });
 
